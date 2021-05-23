@@ -19,27 +19,107 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top d-flex flex-wrap">
         <div class="container-fluid d-inline-flex p-2 bd-highlight">
             <button type="button" class="btn btn-outline-secondary"><i class="fas fa-search"></i> SEARCH</button>
             
             <a class="navbar-brand" href="#"><img src="/assets/shop/shop_logo.png" alt="brand logo"></a>
 
-            
-           
+            <div class="user">
+                <a class="navbar-login" href="#"><i class="fas fa-user-alt fa-lg"></i></a>
+                <a class="navbar-basket" href="#"><i class="fas fa-shopping-basket fa-lg"></i></a>
+            </div>
         </div>
-    
-    </nav>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <div class="container-fluid d-inline-flex p-2 bd-highlight">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu 1 <b class="caret"></b></a>
+                <ul class="dropdown-menu multi-level">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                    <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu 2 <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                    <li class="dropdown-submenu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div><!--/.nav-collapse -->
+
+        <!-- <div class="container-fluid d-flex p-2 bd-highlight">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"> 
                 <span class="navbar-toggler-icon"></span>
             </button>
+                     
 
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item dropdown">
                         <a class="nav-link" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
@@ -62,7 +142,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div> -->
     </nav>
     <!-- Action Section -->
 
@@ -81,7 +161,7 @@
     <!-- Cards -->
     <div class="container-fluid mt-2 mb-5 padding">
         <div class="row padding">
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <div class="card">
                     <img class="card-img-top" src="/assets/shop/1.jpg" alt="cosmetics">
                     <div class="card-body">
@@ -92,7 +172,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <div class="card">
                     <img class="card-img-top" src="/assets/shop/2.jpg" alt="cosmetics">
                     <div class="card-body">
@@ -103,7 +183,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <div class="card">
                     <img class="card-img-top" src="/assets/shop/3.jpg" alt="cosmetics">
                     <div class="card-body">
@@ -114,7 +194,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <div class="card">
                     <img class="card-img-top" src="/assets/shop/4.jpg" alt="cosmetics">
                     <div class="card-body">
@@ -125,7 +205,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3 mt-3">
+            <div class="col-md-2">
                 <div class="card">
                     <img class="card-img-top" src="/assets/shop/5.jpg" alt="cosmetics">
                     <div class="card-body">
@@ -136,7 +216,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3 mt-3">
+            <div class="col-md-2">
                 <div class="card">
                     <img class="card-img-top" src="/assets/shop/6.jpg" alt="cosmetics">
                     <div class="card-body">
@@ -147,7 +227,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3 mt-3">
+            <div class="col-md-2 mt-3">
                 <div class="card">
                     <img class="card-img-top" src="/assets/shop/7.jpg" alt="cosmetics">
                     <div class="card-body">
@@ -158,9 +238,53 @@
                 </div>
             </div>
 
-            <div class="col-md-3 mt-3">
+            <div class="col-md-2 mt-3">
                 <div class="card">
                     <img class="card-img-top" src="/assets/shop/8.jpg" alt="cosmetics">
+                    <div class="card-body">
+                        <h4 class="card-title">Brand Name</h4>
+                        <p class="card-text">Some information about uniqueness of this product</p>
+                        <a href="#" class="btn btn-outline-info">Price € / $</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 mt-3">
+                <div class="card">
+                    <img class="card-img-top" src="/assets/shop/9.jpg" alt="cosmetics">
+                    <div class="card-body">
+                        <h4 class="card-title">Brand Name</h4>
+                        <p class="card-text">Some information about uniqueness of this product</p>
+                        <a href="#" class="btn btn-outline-info">Price € / $</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 mt-3">
+                <div class="card">
+                    <img class="card-img-top" src="/assets/shop/10.jpg" alt="cosmetics">
+                    <div class="card-body">
+                        <h4 class="card-title">Brand Name</h4>
+                        <p class="card-text">Some information about uniqueness of this product</p>
+                        <a href="#" class="btn btn-outline-info">Price € / $</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 mt-3">
+                <div class="card">
+                    <img class="card-img-top" src="/assets/shop/11.jpg" alt="cosmetics">
+                    <div class="card-body">
+                        <h4 class="card-title">Brand Name</h4>
+                        <p class="card-text">Some information about uniqueness of this product</p>
+                        <a href="#" class="btn btn-outline-info">Price € / $</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 mt-3">
+                <div class="card">
+                    <img class="card-img-top" src="/assets/shop/12.jpg" alt="cosmetics">
                     <div class="card-body">
                         <h4 class="card-title">Brand Name</h4>
                         <p class="card-text">Some information about uniqueness of this product</p>

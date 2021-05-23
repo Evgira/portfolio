@@ -36,6 +36,11 @@
     width: 5rem;
 }
 
+.fas {
+    color: #3b92bb;
+    padding-left: 1rem;
+}
+
 /**************************** Cards */
 
 .card-img-top {
@@ -60,5 +65,6 @@
 /******************************** Footer */
 
 .fab {
-    color: #3170aa;
+    color: #3b92bb;
+    padding-right: 2rem;
 }
