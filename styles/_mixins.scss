@@ -28,3 +28,63 @@
     border: 1px outset #008793;
     border-radius: 3px;
 }
+
+
+@mixin contact-page {
+
+    main {
+        background-color: #c9ffe9;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .form {
+        margin: 11rem auto auto auto;
+        width: 80%;
+    }
+
+    .user-form {
+        width: 60%;
+        margin: 2rem auto;
+        padding: 4rem;
+        background-color: $secondary-color;
+        display: block;
+        font-family: FontAwesome;
+        font-size: 2rem;
+        color: $tertiary-color;
+    }
+
+    fieldset {
+        padding: 4px;
+        border-radius: 5px;
+    }
+
+    legend {
+        text-align: justify;
+        padding: 0 5px;
+    }
+
+    .output {
+        font: 1rem 'Fira Sans', sans-serif;
+    }
+
+    // legend div {
+    //     padding: 10px 0;
+    // }
+
+    .user-form input, 
+    label,
+    textarea {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: flex-start;
+        padding: 5px;
+        outline: none;
+    }
+
+    // #date {
+    //     filter: invert(1);
+    // }
+}

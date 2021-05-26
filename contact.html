@@ -10,29 +10,87 @@
 </head>
 <body>
     <div class="container">
-    <!-- Here is my header -->
-    <header class="main-header">
-        <h1 class="mh-logo">
-            <img src="/assets/kcKokoncj.png" width="90" height="95" alt="birdie">
-        </h1>
-        <nav class="main-nav">
-            <ul class="main-nav-list">
-                <li>
-                    <a href="home.html">home</a>
-                </li>
-                <li>
-                    <a href="about.html">about me</a>
-                </li>
-                <li>
-                    <a href="my_work.html">my work</a>
-                </li>
-                <li>
-                    <a href="contact.html">contact</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- End of Header  -->
+      <!-- Here is my header -->
+        <header class="main-header">
+            <div class="mh-logo">
+                <img src="/assets/kcKokoncj.png" width="90" height="95" alt="birdie">
+            </div>
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li>
+                        <a href="index.html">home</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">about</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <button class="btn-dropdown">
+                            <a href="#">projects</a>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <ul class="dropdown-content">
+                                <li><a href="canal_street_market.html">Canal Street Market</a></li>
+                                <li><a href="shop_template.html">Shop Template</a></li>
+                                <li><a href="neumorphic-elements.html">Neumorphic Elements</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     </div>
-</header>
+
+         <!-- End of Header  -->
+
+         <!-- Form -->
+    <main>
+        <section class="form">
+            <form class="user-form" action="#">
+                <fieldset>
+                    <legend>Interested in working together? Fill out the form below with some info about your project and I will get back to you as soon as I can</legend>
+                        
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" 
+                            maxlength="40" minlength="2"
+                            placeholder="&#xf406;" class="fas fa-user">
+                        </div>
+                        
+                        <div>
+                            <label for="surname">Surname</label>
+                            <input type="text" name="surname" id="surname"
+                            maxlength="40" minlength="2"
+                            placeholder="&#xf406;" class="fas fa-user">
+                        </div>
+                        
+                        <div>
+                            <label for="email">E-Mail</label>
+                            <input type="email" name="email" id="email"
+                            maxlength="40" minlength="2"
+                            placeholder="&#xf0e0;" class="fas fa-envelope">
+                        </div> 
+                    
+                        <div>
+                            <label for="date">Timeline</label>
+                            <input type="date" name="date" id="date"
+                            maxlength="40" minlength="2">
+                        </div>
+                        
+                        <div>
+                            <label for="project">Tell me a little about your project:</label>
+                            <textarea name="project" id="project" placeholder="" cols="30" rows="10"></textarea>
+                        </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
 </body>
 </html>
