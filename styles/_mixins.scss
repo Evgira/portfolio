@@ -16,7 +16,7 @@
     border: 2px dashed #004d7a;
     padding: 1rem 5rem;
     color: #004d7a;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 @mixin section-style {
@@ -36,23 +36,25 @@
         background-color: #c9ffe9;
         width: 100vw;
         height: 100vh;
+
+        .form {
+            margin: 11rem auto auto auto;
+            width: 95%;
+
+            .user-form {
+                width: 60%;
+                margin: 2rem auto;
+                padding: 4rem;
+                background-color: $secondary-color;
+                display: block;
+                font-family: FontAwesome;
+                font-size: 2rem;
+                color: $tertiary-color;
+            }
+        
+        }
     }
 
-    .form {
-        margin: 11rem auto auto auto;
-        width: 80%;
-    }
-
-    .user-form {
-        width: 60%;
-        margin: 2rem auto;
-        padding: 4rem;
-        background-color: $secondary-color;
-        display: block;
-        font-family: FontAwesome;
-        font-size: 2rem;
-        color: $tertiary-color;
-    }
 
     fieldset {
         padding: 4px;
@@ -61,16 +63,18 @@
 
     legend {
         text-align: justify;
-        padding: 0 5px;
+        padding: 0 8px;
+        font-weight: 700;
+        letter-spacing: 1;
     }
 
     .output {
         font: 1rem 'Fira Sans', sans-serif;
     }
 
-    // legend div {
-    //     padding: 10px 0;
-    // }
+    fieldset div {
+        padding: 8px 0;
+    }
 
     .user-form input, 
     label,
@@ -79,12 +83,24 @@
         display: flex;
         flex-wrap: wrap;
         width: 90%;
-        justify-content: flex-start;
-        padding: 5px;
+        padding: 10px;
         outline: none;
     }
 
-    // #date {
-    //     filter: invert(1);
-    // }
+    .user-form label {
+        color: $details-color-pink;
+    }
+
+    @media (max-width: 600px) {
+        main .form {
+            width: 100vw;
+            
+        }
+    }
+
+}
+
+@mixin about-page {
+
+    
 }
