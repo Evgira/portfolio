@@ -49,9 +49,10 @@ body {
             display: inline;
     
             a {
-                margin-bottom: 2rem;
+                margin: 2rem 0;
                 margin-left: 5rem;
                 font-family: $font-stack;
+                padding: 1rem 0;
                 display: inline-block;
                 font-size: 1.8rem;
                 text-decoration: none;
