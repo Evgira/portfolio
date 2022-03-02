@@ -11,6 +11,12 @@
 
 body {
   font-size: 1.6rem;
+  
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
 }
 
 .container {
@@ -28,7 +34,9 @@ body {
   left: 0;
   width: 100%;
   background-color: #051937;
+  z-index: 10;
 }
+
 .main-header img {
   max-width: 100%;
   height: auto;
@@ -109,27 +117,33 @@ body {
   color: #f1728a;
 }
 
-.hero-section {
-  margin: 12rem auto 0 auto;
+
+.hero-text-section {
+  display: flex;
+  width: 90%;
+  margin-top: 20rem;
   height: 40%;
   padding: 20px;
-  width: 100%;
+  align-items: center;
 }
-.hero-section .hero-text-section {
-  width: 100%;
+.hero-text-section img {
+  width: 30%;
+  border-radius: 50%;
+  margin-left: 15%;
 }
-.hero-section .hero-text-section h1 {
-  padding: 1rem 0;
+
+.hero-text-section h1 {
   font-weight: 100;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-size: 6rem;
+  width: 50%;
+  margin: 0 2rem;
+  float: right;
+  font-size: 4rem;
   font-family: "Fira Sans", sans-serif;
   color: #051937;
   animation: appear 2.5s ease-out 1s forwards;
   opacity: 0;
 }
+
 @keyframes appear {
   from {
     opacity: 0;
@@ -139,14 +153,29 @@ body {
   }
 }
 
-.article-section div {
-  background-image: url(/assets/about/5.jpg);
-  width: 70%;
+/* Cards with skills */
+.article-section {
+  width: 90%;
   height: 50%;
   margin: 0 auto;
-  background-size: contain;
-  background-repeat: no-repeat;
+  margin-top: 10%;
+}
+
+.skill-card-container {
+  width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  background-color: #c9ffe9;
+  width: 25%;
+  height: 15rem;
+  margin: 1rem;
+  border-radius: 5px;
+
 }
 
 h3, h4 {
@@ -168,14 +197,17 @@ h4 {
 .article-section p {
   font-family: Helvetica;
   font-size: 1.8rem;
+  text-align: center;
+
 }
 
+/* Action  Section */
 .action-section {
   background-color: #004d7a;
-  margin: auto;
-  padding: 1.8rem 1rem;
+  margin: 3rem auto;
+  padding: 1.8rem;
   width: 100%;
-  height: 100%;
+  height: 20%;
   box-shadow: 0px 0px 10px 2px rgba(0, 135, 147, 0.3);
   border: 1px outset #008793;
   border-radius: 3px;
@@ -211,9 +243,12 @@ h4 {
   border: 5px inset #008793;
 }
 
+
+/* footer */
 footer {
   display: flex;
-  padding: 3rem 0;
+  padding: 1rem 0;
+  margin-top: 20%;
 }
 
 .icon-list {
@@ -235,11 +270,8 @@ footer {
   color: #f1728a;
 }
 
-main {
-  background-color: #c9ffe9;
-  width: 100vw;
-  height: 100vh;
-}
+/* Contact page form */
+
 main .form {
   margin: 11rem auto auto auto;
   width: 95%;
